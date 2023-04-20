@@ -1,6 +1,7 @@
-import { StyleSheet, View, SafeAreaView, Image } from "react-native";
+import { View, SafeAreaView, Image } from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
+import NavOptions from "../components/NavOptions";
 
 const HomeScreen = () => {
   return (
@@ -12,15 +13,10 @@ const HomeScreen = () => {
             uri: "https://Links.papareact.com/gzs",
           }}
         />
+        <NavOptions />
       </View>
     </SafeAreaView>
   );
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({
-  text: {
-    color: "blue",
-  },
-});
