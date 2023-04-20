@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/native";
 import NavFavorites from "./NavFavorites";
+import MapTabsButton from "./MapTabsButton";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -22,15 +23,35 @@ const NavigateCard = () => {
   };
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center py-5 text-lg`}>Good morning</Text>
-      <View style={tw`border-t border-gray-200 flex-shrink`}>
-        <GooglePlacesComponent
-          onPress={onDestinationSearchPressHandler}
-          placeholder="Where To?"
-          styles={toInputBoxStyles}
+      <View>
+        <Text style={tw`text-center py-5 text-lg`}>Good morning</Text>
+        <View style={tw`border-t border-gray-200 flex-shrink`}>
+          <GooglePlacesComponent
+            onPress={onDestinationSearchPressHandler}
+            placeholder="Where To?"
+            styles={toInputBoxStyles}
+          />
+        </View>
+        <NavFavorites />
+      </View>
+      <View
+        style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100`}
+      >
+        <MapTabsButton
+          onPress={() => navigation.navigate("RideOptionsCard")}
+          iconName="car"
+          iconType="font-awesome"
+          type="main"
+          text="Rides"
+        />
+
+        <MapTabsButton
+          onPress={() => undefined}
+          iconName="fast-food-outline"
+          iconType="ionicon"
+          text="Eats"
         />
       </View>
-      <NavFavorites />
     </SafeAreaView>
   );
 };
