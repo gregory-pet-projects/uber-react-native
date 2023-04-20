@@ -3,6 +3,7 @@ import NavOptions from "./NavOptions";
 import NavigateCard from "./NavigateCard";
 import RideOptionsCard from "./RideOptionsCard";
 import GooglePlacesComponent from "./GooglePlacesComponent";
+import MarkerComponent from "./MarkerComponent";
 
 export {
   NavOptions,
@@ -10,4 +11,5 @@ export {
   NavigateCard,
   RideOptionsCard,
   GooglePlacesComponent,
+  MarkerComponent,
 };
