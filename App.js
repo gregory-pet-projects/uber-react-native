@@ -3,7 +3,8 @@ import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen, MapScreen } from "./screens/index";
+import { HomeScreen, MapScreen } from "./screens";
+import { renderScreens } from "./service/utils";
 
 const screens = [
   {
@@ -24,11 +25,7 @@ export default function App() {
     <Provider store={store}>
       <NavigationContainer>
         <SafeAreaProvider>
-          <Stack.Navigator>
-            {screens.map((screen, idx) => (
-              <Stack.Screen key={idx} {...screen} />
-            ))}
-          </Stack.Navigator>
+          <Stack.Navigator>{renderScreens(Stack, screens)}</Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
     </Provider>
