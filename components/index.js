@@ -4,6 +4,7 @@ import NavigateCard from "./NavigateCard";
 import RideOptionsCard from "./RideOptionsCard";
 import GooglePlacesComponent from "./GooglePlacesComponent";
 import MarkerComponent from "./MarkerComponent";
+import NavFavorites from "./NavFavorites";
 
 export {
   NavOptions,
@@ -12,4 +13,5 @@ export {
   RideOptionsCard,
   GooglePlacesComponent,
   MarkerComponent,
+  NavFavorites,
 };

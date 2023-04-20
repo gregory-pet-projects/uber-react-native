@@ -5,6 +5,7 @@ import GooglePlacesComponent from "./GooglePlacesComponent";
 import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/native";
+import NavFavorites from "./NavFavorites";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ const NavigateCard = () => {
           styles={toInputBoxStyles}
         />
       </View>
+      <NavFavorites />
     </SafeAreaView>
   );
 };
