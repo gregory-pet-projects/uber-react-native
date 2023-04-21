@@ -54,7 +54,7 @@ const RideOptionsCard = () => {
           onPress={() => {
             navigation.navigate("NavigateCard");
           }}
-          style={tw`absolute top-3 left-5 p-3 rounded-full bg-red-300`}
+          style={tw`absolute top-3 left-5 p-3 rounded-full`}
         >
           <Icon name="chevron-left" type="fontawesome" />
         </TouchableOpacity>
