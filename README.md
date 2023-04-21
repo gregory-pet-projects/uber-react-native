@@ -1,5 +1,5 @@
 # Uber clone with React Native
-The React Native Uber Clone project is a mobile application that mimics the core features of the popular ride-sharing app, Uber. The app allows users to request and book rides from drivers in their area, track their ride's progress, and make payments through the app. The project is built using the React Native framework, making it a cross-platform application that can run on both iOS and Android devices. It also utilizes various third-party libraries and APIs, such as Google Maps and Firebase, to provide users with a seamless experience.
+The React Native Uber Clone project is a mobile application that mimics the core features of the popular ride-sharing app, Uber. The app allows users to request and book rides from drivers in their area, track their ride's progress, and make payments through the app. The project is built using the React Native framework, making it a cross-platform application that can run on both iOS and Android devices. It also utilizes various third-party libraries and APIs, such as Google Maps, to provide users with a seamless experience.
 
 ## Technologies Used
 - React Native
