@@ -17,8 +17,8 @@ Install project with npm
 
 ```bash
   git clone https://github.com/gregory-pet-projects/uber-react-native.git
-  npm i
   cd uber-react-native
+  npm i
 ```
 
 Add .env file
